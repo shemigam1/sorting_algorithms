@@ -12,7 +12,7 @@ void bubble_sort(int *array, size_t size)
 	size_t i;
 	int swapped = 1;
 
-	while (swapped && size >= 2)
+	do
 	{
 		swapped = 0;
 
@@ -29,5 +29,5 @@ void bubble_sort(int *array, size_t size)
 				swapped = 1;
 			}
 		}
-	}
+	} while (swapped && size >= 2);
 }
